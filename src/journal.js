@@ -1,9 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.3.0/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.3.0/firebase-analytics.js";
 
-console.log(import.meta.env);
-console.log("hello");
-
 onAuthStateChanged(auth, (user) => {
   if (!user) {
     window.location.href = "index.html";
