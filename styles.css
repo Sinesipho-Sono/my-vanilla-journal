@@ -3,6 +3,7 @@
   --heading-font-family: "Great Vibes", serif;
   --primary-color: #e5e1f5;
 }
+
 .app {
   width: 800px;
   background-color: var(--primary-color);
@@ -10,7 +11,6 @@
 
 .login-body {
   background-color: #efeef6;
-  background-color: var(--primary-color);
   text-align: center;
 }
 
