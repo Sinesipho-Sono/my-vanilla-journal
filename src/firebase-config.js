@@ -2,9 +2,6 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/11.3.0/firebas
 import {
   getAuth,
   signOut,
-  GoogleAuthProvider,
-  signInWithPopup,
-  sendPasswordResetEmail,
 } from "https://www.gstatic.com/firebasejs/11.3.0/firebase-auth.js";
 
 const firebaseConfig = {
