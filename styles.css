@@ -63,13 +63,24 @@ input {
 
 @media (max-width: 768px) {
   .login-container {
-    width: 300px;
+    width: 400px;
     max-width: fit-content;
     margin: 0 auto;
     display: block;
   }
+  .app {
+    width: 600px;
+  }
 }
-
+@media (max-width: 578px) {
+  .app {
+    width: 500px;
+    max-width: fit-content;
+  }
+  h1 {
+    font-size: 40px;
+  }
+}
 .footer-icons {
   color: #ab99f3;
   margin: 0 10px;
