@@ -5,7 +5,8 @@ import {
   signOut,
 } from "https://www.gstatic.com/firebasejs/11.3.0/firebase-auth.js";
 
-import { auth } from "./firebase-config.js";
+console.log(import.meta.env);
+console.log("hello");
 
 onAuthStateChanged(auth, (user) => {
   if (!user) {

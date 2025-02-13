@@ -7,10 +7,13 @@
   width: 800px;
   background-color: var(--primary-color);
 }
+
 .login-body {
   background-color: #efeef6;
+  background-color: var(--primary-color);
   text-align: center;
 }
+
 h1,
 h2 {
   font-family: var(--heading-font-family);
@@ -28,7 +31,6 @@ label {
 label {
   font-size: 20px !important;
 }
-
 .login-container {
   width: 400px;
   margin: 20px auto;
@@ -56,6 +58,7 @@ input {
 @media (max-width: 768px) {
   .login-container {
     width: 400px;
+    width: 300px;
     max-width: fit-content;
     margin: 0 auto;
     display: block;
@@ -129,4 +132,13 @@ nav {
 
 .journal-brand {
   font-family: var(--heading-font-family);
+}
+
+.footer-link,
+.signup-link {
+  color: #7455f3;
+}
+.signup-link {
+  color: black;
+  font-family: var(--default-font-family);
 }
