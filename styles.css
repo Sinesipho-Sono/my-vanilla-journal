@@ -96,6 +96,41 @@ input {
   background-color: #ab99f3;
   color: white;
 }
+
+.hr-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.line {
+  border: 0;
+  border-top: 1px solid #000;
+  flex-grow: 1;
+}
+
+.or {
+  margin: 0 10px;
+  font-size: 20px;
+  font-family: var(--heading-font-family);
+  color: #000;
+  font-weight: bold;
+}
+.google-button {
+  padding: 10px 30px;
+  background-color: white;
+  color: #7455f3;
+  border: 2px solid #7455f3;
+  font-family: var(--heading-font-family);
+  font-size: 25px !important;
+  border-radius: 30px;
+}
+.google-button:hover {
+  color: white;
+  background-color: #7455f3;
+}
+
 nav {
   background-color: var(--primary-color);
 }

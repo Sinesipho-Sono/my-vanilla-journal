@@ -44,21 +44,31 @@
               placeholder="Enter your email"
             />
           </div>
-          <div class="row mt-5">
+          <div class="row mt-5 password-container">
             <label for="login-password">Password </label>
             <input
               type="password"
               id="login-password"
-              class="shadow"
+              class="shadow password"
               required
               placeholder="Enter your password"
-            />
+            /><span id="toggle-password" class="eye-icon"></span>
           </div>
         </div>
 
         <button type="submit" class="mt-4 mb-3 login-button shadow rounded">
           login
         </button>
+        <div class="hr-container">
+          <hr class="line" />
+          <span class="or">OR</span>
+          <hr class="line" />
+        </div>
+        <div class="google-container">
+          <button id="google-signin" class="google-button shadow mb-2">
+            Login using Google
+          </button>
+        </div>
       </form>
       <a href="signup.html" class="signup-link">Create a new account</a>
     </div>
