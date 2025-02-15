@@ -5,4 +5,9 @@ export default defineConfig({
     outDir: "dist",
     emptyOutDir: true,
   },
+  plugins: [
+    copy({
+      targets: [{ src: "signup.html", dest: "" }],
+    }),
+  ],
 });
