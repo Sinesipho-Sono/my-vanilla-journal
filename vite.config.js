@@ -2,12 +2,12 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
   build: {
-    outDir: "dist",
-    emptyOutDir: true,
+    rollupOptions: {
+      input: {
+        main: "index.html",
+        signup: "signup.html",
+        journal: "journal.html",
+      },
+    },
   },
-  plugins: [
-    copy({
-      targets: [{ src: "signup.html", dest: "" }],
-    }),
-  ],
 });
