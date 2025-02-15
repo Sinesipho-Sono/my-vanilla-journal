@@ -1,12 +1,9 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/11.3.0/firebase-app.js";
+import { auth } from "./firebase-config.js";
 import {
   getAuth,
   onAuthStateChanged,
   signOut,
 } from "https://www.gstatic.com/firebasejs/11.3.0/firebase-auth.js";
-
-console.log(import.meta.env);
-console.log("hello");
 
 onAuthStateChanged(auth, (user) => {
   if (!user) {
