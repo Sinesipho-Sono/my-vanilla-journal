@@ -1,16 +1,19 @@
-import { defineConfig } from "vite";
+import { defineConfig, loadEnv } from "vite";
+import dotenv from "dotenv";
 
+dotenv.config();
 export default defineConfig({
-  build: {
-    rollupOptions: {
-      input: {
-        main: "index.html",
-        signup: "signup.html",
-        journal: "journal.html",
+  return: {
+    build: {
+      outDir: "dist",
+      emptyOutDir: true,
+      rollupOptions: {
+        input: {
+          main: "index.html",
+          signup: "signup.html",
+          journal: "journal.html",
+        },
       },
     },
-  },
-  define: {
-    "process.env": process.env,
   },
 });

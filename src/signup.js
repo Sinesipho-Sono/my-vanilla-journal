@@ -4,6 +4,7 @@ import {
   GoogleAuthProvider,
   signInWithPopup,
   onAuthStateChanged,
+  createUserWithEmailAndPassword,
   signOut,
 } from "https://www.gstatic.com/firebasejs/11.3.0/firebase-auth.js";
 

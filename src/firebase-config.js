@@ -1,9 +1,7 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.3.0/firebase-app.js";
-import {
-  getAuth,
-  signOut,
-} from "https://www.gstatic.com/firebasejs/11.3.0/firebase-auth.js";
-import { getFirestore } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js";
+import { getAuth } from "https://www.gstatic.com/firebasejs/11.3.0/firebase-auth.js";
+import { getFirestore } from "https://www.gstatic.com/firebasejs/11.3.0/firebase-firestore.js";
+import.meta.env;
 
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_API_KEY,
@@ -17,5 +15,5 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
-const db = getFirestore(app);
-export { auth, signOut, db };
+
+export { auth };
